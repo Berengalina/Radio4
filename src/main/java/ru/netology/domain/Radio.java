@@ -8,7 +8,9 @@ public class Radio {
     int maxVolume;
     int minVolume;
 
-
+    public int getMaxStationNumber() {
+        return maxStationNumber;
+    }
 
     public void setCurrentStationNumber(int currentStationNumber) {
         this.currentStationNumber = currentStationNumber;
