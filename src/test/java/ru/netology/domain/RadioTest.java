@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RadioTest {
 
-    Radio radio = new Radio();
+    Radio radio = new Radio(0, 10, 0, 100);
 
     @Test
     public void shouldGetMaxStation() {  //Можно задавать количество радиостанций при создании объекта (по умолчанию - 10)
@@ -29,7 +29,7 @@ class RadioTest {
         System.out.println("StationNumber before decrease is " + radio.currentStationNumber);
         radio.decreaseStationNumber();
         System.out.println("StationNumber after decrease is " + radio.currentStationNumber);
-        assertEquals(2, radio.currentStationNumber);   //данный тест проходит, но только потому, что по умолчанию minStationNumber инициализирован как 0
+        assertEquals(2, radio.currentStationNumber);
     }
 
     @Test
@@ -68,7 +68,7 @@ class RadioTest {
         System.out.println("Volume before decrease is " + radio.currentVolume);
         radio.decreaseVolume();
         System.out.println("Volume after decrease is " + radio.currentVolume);
-        assertEquals(5, radio.currentVolume); //данный тест проходит, но только потому, что по умолчанию minVolume инициализирован как 0
+        assertEquals(5, radio.currentVolume);
 
     }
 
@@ -78,7 +78,7 @@ class RadioTest {
         System.out.println("Volume before increase is " + radio.currentVolume);
         radio.increaseVolume();
         System.out.println("Volume after increase is " + radio.currentVolume);
-        assertEquals(100, radio.currentVolume);   //данный тест успешно проходит, но логика неправильная
+        assertEquals(100, radio.currentVolume);
 
     }
 
@@ -88,7 +88,7 @@ class RadioTest {
         System.out.println("Volume before decrease is " + radio.currentVolume);
         radio.decreaseVolume();
         System.out.println("Volume after decrease is " + radio.currentVolume);
-        assertEquals(0, radio.currentVolume);  //данный тест проходит, но только потому, что по умолчанию minVolume инициализирован как 0
+        assertEquals(0, radio.currentVolume);
 
     }
 
