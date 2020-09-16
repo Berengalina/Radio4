@@ -25,29 +25,10 @@ public class Radio {
     }
 
 
-    public void setMaxStationNumber(int maxStationNumber) {
-        this.maxStationNumber = maxStationNumber;
-    }
-
-
-    public void setMinStationNumber(int minStationNumber) {
-        this.minStationNumber = minStationNumber;
-    }
-
-
     public void setCurrentVolume(int volume) {
         this.currentVolume = volume;
     }
 
-
-    public void setMaxVolume(int maxVolume) {
-        this.maxVolume = maxVolume;
-    }
-
-
-    public void setMinVolume(int minVolume) {
-        this.minVolume = minVolume;
-    }
 
     public void increaseStationNumber() {
         if (currentStationNumber < maxStationNumber) {
