@@ -92,4 +92,28 @@ class RadioTest {
 
     }
 
+    @Test
+    public void shouldFillDefaultMaxStationNumber (){
+        Radio radio1 = new Radio ();
+        assertEquals(14, radio1.getMaxStationNumber());
+    }
+
+    @Test
+    public void shouldFillDefaultMinStationNumber (){
+        Radio radio1 = new Radio ();
+        assertEquals(3, radio1.getMinStationNumber());
+    }
+
+    @Test
+    public void shouldFillDefaultMaxVolume (){
+        Radio radio1 = new Radio ();
+        assertEquals(45, radio1.getMaxVolume());
+    }
+
+    @Test
+    public void shouldFillDefaultMinVolume (){
+        Radio radio1 = new Radio ();
+        assertEquals(1, radio1.getMinVolume());
+    }
+
 }
